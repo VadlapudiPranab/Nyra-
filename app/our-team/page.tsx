@@ -13,7 +13,7 @@ export default function OurTeamPage() {
       role: "Host, Morning Commute",
       bio: "Raj started working with Radio Nyra in May 2025. He built most of this website and manages our social media.",
       featured: true,
-      image: "/images/chai pe charcha.jpg", // Educated guess or placeholder-like usage
+      image: "/Images/chai pe charcha.jpg", // Educated guess or placeholder-like usage
     },
     {
       name: "Dr. John Caldwell",
@@ -26,31 +26,31 @@ export default function OurTeamPage() {
       role: "Host, Desh Pradesh",
       bio: "Vishal is here for your afternoon excitement - our vibrant host.",
       featured: true,
-      image: "/images/desh pardesh.jpg",
+      image: "/Images/desh pardesh.jpg",
     },
     {
       name: "Shivani",
       role: "Host, Nirvana Nights",
       bio: "The voice of your evenings on Nirvana Nights.",
-      image: "/images/Nirvana Nights.jpg",
+      image: "/Images/Nirvana Nights.jpg",
     },
     {
       name: "Monika Joshi",
       role: "Host, Triangle Tunes & Talks",
       bio: "Catch her vibrant energy every night from 10:00pm - 1:00am.",
-      image: "/images/Triangle Tune.jpg",
+      image: "/Images/Triangle Tune.jpg",
     },
     {
       name: "Kanthi",
       role: "Host, Mana Muchatlu",
       bio: "Our lovely host on the Telugu channel, every Thursday.",
-      image: "/images/Chinna Mata.jpg",
+      image: "/Images/Chinna Mata.jpg",
     },
     {
       name: "Jyoti",
       role: "Host, Dil Se Desi",
       bio: "Your vibrant host of Dil Se Desi, every Friday evening.",
-      image: "/images/Dil Se Desi.jpg",
+      image: "/Images/Dil Se Desi.jpg",
     },
     {
       name: "Dr. Afroz Taj",
@@ -68,32 +68,32 @@ export default function OurTeamPage() {
       name: "Arpit Tandon",
       role: "Host, Idhar Udhar Ki Baatein",
       bio: "Talks about... vaghera vaghera! Join him on Wednesdays.",
-      image: "/images/Idhar Udhar Ki Baatein.jpg",
+      image: "/Images/Idhar Udhar Ki Baatein.jpg",
     },
     {
       name: "Aayushii Rode",
       role: "Host, Zara Muskurao",
       bio: "Start your weekday mornings with a smile with Aayushii.",
-      image: "/images/Zara Muskurao.jpg",
+      image: "/Images/Zara Muskurao.jpg",
     },
     {
       name: "Vaishnavi Palleda",
       role: "Vice President & Host",
       bio: "CEO of Vault Productions™ and host of Hello Vaishnavi.",
       featured: true,
-      image: "/images/Hello Vaishnavi.jpg",
+      image: "/Images/Hello Vaishnavi.jpg",
     },
     {
       name: "Aditi",
       role: "Host, Unfiltered Gup Shup",
       bio: "Your gentle Saturday morning wake up show host.",
-      image: "/images/Kuch Tum Kaho, Kuch Hum Kahein.jpg",
+      image: "/Images/Kuch Tum Kaho, Kuch Hum Kahein.jpg",
     },
     {
       name: "Bharti Rathore",
       role: "Host, Bollywood Bliss",
       bio: "Diving into the latest gossip and drama in the world of Bollywood.",
-      image: "/images/Bollywood Bliss.jpg",
+      image: "/Images/Bollywood Bliss.jpg",
     },
   ]
 

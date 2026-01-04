@@ -10,25 +10,25 @@ export default function HomePage() {
 
   // Data for Hosts
   const hosts = [
-    { name: "Arpit Tandon", show: "Idhar Udhar Ki Baatein", image: "/images/Idhar Udhar Ki Baatein.jpg" },
-    { name: "Raj Persaud", show: "Morning Commute", image: "/images/chai pe charcha.jpg" },
-    { name: "Monika Joshi", show: "Triangle Tunes", image: "/images/Triangle Tune.jpg" },
-    { name: "Vaishnavi Palleda", show: "Hello Vaishnavi", image: "/images/Hello Vaishnavi.jpg" },
+    { name: "Arpit Tandon", show: "Idhar Udhar Ki Baatein", image: "/Images/Idhar Udhar Ki Baatein.jpg" },
+    { name: "Raj Persaud", show: "Morning Commute", image: "/Images/chai pe charcha.jpg" },
+    { name: "Monika Joshi", show: "Triangle Tunes", image: "/Images/Triangle Tune.jpg" },
+    { name: "Vaishnavi Palleda", show: "Hello Vaishnavi", image: "/Images/Hello Vaishnavi.jpg" },
   ];
 
   // Upcoming Events WITH IMAGES
   const upcomingEvents = [
-    { title: "Radio Nyra NYE 2026", date: "Dec 31, 2025", location: "Cary, NC", image: "/placeholder-event.jpg" },
-    { title: "Zain Zohaib Live", date: "Sep 28, 2025", location: "Raleigh, NC", image: "/placeholder-event.jpg" },
-    { title: "Community Meetup", date: "Oct 10, 2025", location: "Downtown Park", image: "/placeholder-event.jpg" },
+    { title: "Radio Nyra NYE 2026", date: "Dec 31, 2025", location: "Cary, NC", image: "/bollywood-event-flyer.jpg" },
+    { title: "Zain Zohaib Live", date: "Sep 28, 2025", location: "Raleigh, NC", image: "/placeholder.jpg" },
+    { title: "Community Meetup", date: "Oct 10, 2025", location: "Downtown Park", image: "/placeholder.jpg" },
   ];
 
   // Past Events SMALL RECTANGLES WITH IMAGES
   const pastEvents = [
-    { title: "Diwali Gala", date: "Nov 2024", image: "/placeholder-event.jpg" },
-    { title: "Navratri Night", date: "Oct 2024", image: "/placeholder-event.jpg" },
-    { title: "Independence Day", date: "Aug 2024", image: "/placeholder-event.jpg" },
-    { title: "Summer Jam", date: "July 2024", image: "/placeholder-event.jpg" },
+    { title: "Diwali Gala", date: "Nov 2024", image: "/placeholder.jpg" },
+    { title: "Navratri Night", date: "Oct 2024", image: "/placeholder.jpg" },
+    { title: "Independence Day", date: "Aug 2024", image: "/placeholder.jpg" },
+    { title: "Summer Jam", date: "July 2024", image: "/placeholder.jpg" },
   ];
 
   return (
