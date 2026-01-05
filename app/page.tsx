@@ -169,7 +169,7 @@ export default function HomePage() {
             <h2 className="text-2xl font-bold uppercase tracking-tighter mb-4 border-l-4 border-primary pl-4 text-left text-black">Our Partners</h2>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
-              {Array.from({ length: 29 }, (_, i) => i + 2).map((num) => (
+              {Array.from({ length: 30 }, (_, i) => i + 2).map((num) => (
                 <div key={`partner-${num}`} className="group border border-gray-100 hover:border-primary/50 transition-all duration-300 bg-white p-2 flex items-center justify-center h-20 hover:shadow-lg">
                   <div className="relative w-full h-full">
                     <img
