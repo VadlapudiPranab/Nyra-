@@ -55,8 +55,18 @@ export function Navigation() {
                 </Button>
               </SheetTrigger>
               <SheetContent side="left" className="w-[300px] sm:w-[400px]">
-                <SheetHeader>
-                  <SheetTitle className="text-left font-bold uppercase tracking-tighter">Menu</SheetTitle>
+                <SheetHeader className="flex flex-row items-center gap-4 text-left border-b border-border/50 pb-6">
+                  <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-primary">
+                    <img
+                      src="/images/1.jpg"
+                      alt="Radio Nyra Logo"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <SheetTitle className="text-left font-bold uppercase tracking-tighter leading-none">Menu</SheetTitle>
+                    <p className="text-[10px] text-muted-foreground font-medium tracking-widest uppercase mt-1">Radio Nyra</p>
+                  </div>
                 </SheetHeader>
                 <div className="flex flex-col gap-6 mt-8">
                   {navLinks.map((link) => (

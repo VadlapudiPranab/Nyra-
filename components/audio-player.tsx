@@ -60,16 +60,21 @@ export function AudioPlayer() {
             <div className="flex items-center gap-4">
               <div className="relative w-16 h-16 rounded-xl overflow-hidden shadow-lg flex-shrink-0 border border-border">
                 <div className="absolute inset-0 bg-muted flex items-center justify-center backdrop-blur-sm">
-                  {isPlaying ? (
-                    <div className="flex items-center gap-0.5 h-8">
-                      <div className="w-1.5 bg-primary rounded-full wave-bar" style={{ animationDelay: "0s" }} />
-                      <div className="w-1.5 bg-primary rounded-full wave-bar" style={{ animationDelay: "0.1s" }} />
-                      <div className="w-1.5 bg-primary rounded-full wave-bar" style={{ animationDelay: "0.2s" }} />
-                      <div className="w-1.5 bg-primary rounded-full wave-bar" style={{ animationDelay: "0.3s" }} />
-                      <div className="w-1.5 bg-primary rounded-full wave-bar" style={{ animationDelay: "0.4s" }} />
+                  <img
+                    src="/images/1.jpg"
+                    alt="Radio Nyra Logo"
+                    className="w-full h-full object-cover"
+                  />
+                  {isPlaying && (
+                    <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px] flex items-center justify-center">
+                      <div className="flex items-center gap-0.5 h-6">
+                        <div className="w-1 bg-white rounded-full wave-bar" style={{ animationDelay: "0s" }} />
+                        <div className="w-1 bg-white rounded-full wave-bar" style={{ animationDelay: "0.1s" }} />
+                        <div className="w-1 bg-white rounded-full wave-bar" style={{ animationDelay: "0.2s" }} />
+                        <div className="w-1 bg-white rounded-full wave-bar" style={{ animationDelay: "0.3s" }} />
+                        <div className="w-1 bg-white rounded-full wave-bar" style={{ animationDelay: "0.4s" }} />
+                      </div>
                     </div>
-                  ) : (
-                    <Volume2 className="h-7 w-7 text-primary" />
                   )}
                 </div>
                 {isPlaying && <div className="absolute top-2 right-2 w-2.5 h-2.5 bg-primary rounded-full live-pulse" />}
