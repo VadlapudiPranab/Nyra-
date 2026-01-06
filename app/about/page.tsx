@@ -58,8 +58,21 @@ export default function AboutPage() {
                             </div>
 
                             <div className="bg-muted/30 p-12 border-y border-border text-center">
-                                <h2 className="text-2xl font-bold uppercase tracking-widest mb-4">Official Radio Nyra Write-up</h2>
-                                <p className="text-muted-foreground uppercase text-xs font-black tracking-widest">Incoming Soon...</p>
+                                <h2 className="text-3xl font-black uppercase tracking-tight mb-8">Our Story</h2>
+                                <div className="max-w-3xl mx-auto space-y-6 text-lg text-muted-foreground leading-relaxed italic">
+                                    <p>
+                                        Located in the lovely forest terrain of Durham North Carolina, is our first Radio Station – WDUR 1490 AM where the journey of AROHI MEDIA began in 2014. With our own tower and 1000W non-directional broadcasting channel, we launched 24/7 Desi News, Talk and Music format in Hindi for the rapidly growing South Asian population in Raleigh-Durham area.
+                                    </p>
+                                    <p>
+                                        In no time we leased the HD-4 Channel of 99.9 WCMC-FM and eventually launched our FM translator on 101.9 FM. By then we had caught the attention of the rapidly expanding, influential Indian Subcontinent population in the Triangle.
+                                    </p>
+                                    <p>
+                                        We bridge the gap between home and the United States with our quality news, music, entertainment, and cultural programming in Raleigh-Durham, NC.
+                                    </p>
+                                    <p className="font-bold text-primary not-italic">
+                                        In July 2025, we launched our 24/7 Telugu channel on the HD3 Channel of 99.9 FM, right next to our Hindi HD Channel!
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
