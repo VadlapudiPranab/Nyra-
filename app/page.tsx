@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
@@ -6,6 +9,7 @@ import { Badge } from "@/components/ui/badge"
 import { Play, Calendar, Radio, Users, Mic2, ArrowRight, Smartphone, Apple } from "lucide-react"
 import { CountUp } from "@/components/ui/count-up"
 import { ListenLiveButton } from "@/components/listen-live-button"
+import { Lightbox } from "@/components/lightbox"
 
 export default function HomePage() {
 
@@ -32,6 +36,33 @@ export default function HomePage() {
     { title: "Independence Day", date: "Aug 2024", image: "/placeholder.jpg" },
     { title: "Summer Jam", date: "July 2024", image: "/placeholder.jpg" },
   ];
+
+  const homeEvents = [
+    { title: "Radio Nyra Bollywood NYE 2026", image: "/images/event_nye_2026.jpg", date: "Dec 31, 2025" },
+    { title: "Triangle Got Talent", image: "/images/event_triangle_talent.jpg", date: "Nov 23, 2025" },
+    { title: "Hooky Cary Holiday VIP Showcase", image: "/images/event_hooky_cary.jpg", date: "Nov 18, 2025" },
+    { title: "Radio Nyra Diwali Mela", image: "/images/event_diwali_mela.jpg", date: "Nov 11, 2025" },
+    { title: "Hum Sub Diwali", image: "/images/event_hum_sub_diwali.jpg", date: "Nov 04, 2025" },
+    { title: "Garner India Fest", image: "/images/event_garner_fest.jpg", date: "Nov 04, 2025" },
+    { title: "IAFV Diwali Fest", image: "/images/event_iafv_diwali.jpg", date: "Oct 28, 2025" },
+    { title: "Zain Zohaib Qawwali Mehfil", image: "/images/event_zain_zohaib.jpg", date: "Nov 02, 2025" },
+  ];
+
+  const [lightbox, setLightbox] = useState({ isOpen: false, index: 0 })
+
+  const openLightbox = (index: number) => {
+    setLightbox({ isOpen: true, index })
+  }
+
+  const closeLightbox = () => {
+    setLightbox({ ...lightbox, isOpen: false })
+  }
+
+  const navigateLightbox = (index: number) => {
+    setLightbox({ ...lightbox, index })
+  }
+
+  const eventImages = homeEvents.map(e => e.image)
 
   return (
     <div className="min-h-screen bg-background font-sans selection:bg-primary selection:text-primary-foreground">
@@ -117,36 +148,54 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* HOSTS */}
-        <section className="py-8 bg-muted/20">
+        {/* PAST EVENTS SECTION */}
+        <section className="py-12 bg-muted/20">
           <div className="container mx-auto px-4">
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-2xl font-bold uppercase tracking-tighter border-l-4 border-primary pl-4">On Air Now</h2>
-              <Button variant="link" className="text-primary font-bold uppercase tracking-widest text-xs" asChild>
-                <Link href="/our-team">View All Hosts <ArrowRight className="ml-2 w-3 h-3" /></Link>
+            <div className="flex flex-col mb-10">
+              <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter text-primary italic leading-none">past events</h2>
+              <Button variant="link" className="text-foreground hover:text-primary font-bold uppercase tracking-widest text-xs p-0 h-auto justify-start mt-2 transition-colors w-fit" asChild>
+                <Link href="/events">View all events <ArrowRight className="ml-2 w-3 h-3" /></Link>
               </Button>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {hosts.map((host, i) => (
-                <Link key={i} href="/schedule" className="group block bg-card border border-border/50 hover:shadow-xl transition-all duration-300">
-                  <div className="relative aspect-[4/5] bg-black overflow-hidden">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {homeEvents.map((event, i) => (
+                <div
+                  key={i}
+                  className="group block bg-card border border-border/50 hover:shadow-xl transition-all duration-300 cursor-pointer"
+                  onClick={() => openLightbox(i)}
+                >
+                  <div className="relative aspect-video bg-black overflow-hidden">
                     <img
-                      src={host.image}
-                      alt={host.name}
-                      className="w-full h-full object-contain transition-all duration-500"
+                      src={event.image}
+                      alt={event.title}
+                      className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = "https://placehold.co/600x400/000000/FFFFFF?text=Event+Image";
+                      }}
                     />
-                    <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <span className="text-white font-bold uppercase tracking-widest text-xs border border-white px-4 py-2">View Event</span>
+                    </div>
                   </div>
-                  <div className="p-3 border-t border-border">
-                    <h3 className="text-lg font-bold uppercase tracking-tight text-foreground line-clamp-1">{host.name}</h3>
-                    <p className="text-[10px] font-bold uppercase text-primary tracking-wider opacity-80">{host.show}</p>
+                  <div className="p-4 border-t border-border">
+                    <h3 className="text-lg font-bold uppercase tracking-tight text-foreground line-clamp-1 italic">{event.title}</h3>
+                    <p className="text-[10px] font-bold uppercase text-primary tracking-wider mt-1">{event.date}</p>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
           </div>
         </section>
+
+        <Lightbox
+          isOpen={lightbox.isOpen}
+          onClose={closeLightbox}
+          images={eventImages}
+          currentIndex={lightbox.index}
+          onNavigate={navigateLightbox}
+        />
 
         {/* UPCOMING EVENTS (WITH IMAGES) */}
         <section className="py-8 bg-background">
