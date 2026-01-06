@@ -15,19 +15,19 @@ export default function RadioShowsPage() {
     const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
     const shows: Show[] = [
-        { name: "Non Stop Hungama", image: "/images/radio-shows/non-stop-hungama.jpg" },
-        { name: "Morning Commute", image: "/images/radio-shows/morning-commute.jpg" },
-        { name: "Hello Vaishnavi", image: "/images/radio-shows/hello-vaishnavi.jpg" },
-        { name: "Desh Pradesh", image: "/images/radio-shows/desh-pradesh.jpg" },
-        { name: "Nirvana Nights", image: "/images/radio-shows/nirvana-nights.jpg" },
-        { name: "Triangle Tunes", image: "/images/radio-shows/triangle-tunes.jpg" },
-        { name: "Mana Muchatlu", image: "/images/radio-shows/mana-muchatlu.jpg" },
-        { name: "Dil Se Desi", image: "/images/radio-shows/dil-se-desi.jpg" },
-        { name: "Idhar Udhar Ki Baatein", image: "/images/radio-shows/idhar-udhar-ki-baatein.jpg" },
-        { name: "Zara Muskurao", image: "/images/radio-shows/zara-muskurao.jpg" },
-        { name: "Unfiltered Gup Shup", image: "/images/radio-shows/unfiltered-gup-shup.jpg" },
-        { name: "Bollywood Bliss", image: "/images/radio-shows/bollywood-bliss.jpg" },
-        { name: "Geet Bazaar", image: "/images/radio-shows/geet-bazaar.jpg" },
+        { name: "Non Stop Hungama", image: "/images/hosts/non-stop-hungama.jpg" },
+        { name: "Morning Commute", image: "/images/hosts/morning-commute.jpg" },
+        { name: "Hello Vaishnavi", image: "/images/hosts/hello-vaishnavi.jpg" },
+        { name: "Desh Pradesh", image: "/images/hosts/desh-pradesh.jpg" },
+        { name: "Nirvana Nights", image: "/images/hosts/nirvana-nights.jpg" },
+        { name: "Triangle Tunes", image: "/images/hosts/triangle-tunes.jpg" },
+        { name: "Mana Muchatlu", image: "/images/hosts/mana-muchatlu.jpg" },
+        { name: "Dil Se Desi", image: "/images/hosts/dil-se-desi.jpg" },
+        { name: "Idhar Udhar Ki Baatein", image: "/images/hosts/idhar-udhar-ki-baatein.jpg" },
+        { name: "Zara Muskurao", image: "/images/hosts/zara-muskurao.jpg" },
+        { name: "Unfiltered Gup Shup", image: "/images/hosts/unfiltered-gup-shup.jpg" },
+        { name: "Bollywood Bliss", image: "/images/hosts/bollywood-bliss.jpg" },
+        { name: "Geet Bazaar", image: "/images/hosts/geet-bazaar.jpg" },
     ]
 
     // Close popup on ESC key
