@@ -4,13 +4,6 @@ import { useState } from "react"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Lightbox } from "@/components/lightbox"
-
-"use client"
-
-import { useState } from "react"
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
-import { Lightbox } from "@/components/lightbox"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin } from "lucide-react"
 
@@ -74,9 +67,9 @@ export default function EventsPage() {
                                 <div key={i} className="group bg-card border border-border overflow-hidden hover:border-primary transition-colors">
                                     {/* Event Image */}
                                     <div className="relative h-48 bg-muted overflow-hidden">
-                                        <img 
-                                            src={ev.image} 
-                                            alt={ev.title} 
+                                        <img
+                                            src={ev.image}
+                                            alt={ev.title}
                                             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                             onError={(e) => {
                                                 const target = e.target as HTMLImageElement;
@@ -103,7 +96,7 @@ export default function EventsPage() {
                             ))}
                         </div>
                     </section>
-                    
+
                     {/* PAST EVENTS */}
                     <section>
                         <h2 className="text-2xl font-bold uppercase tracking-tighter mb-8 border-l-4 border-primary pl-4">Past Events</h2>
