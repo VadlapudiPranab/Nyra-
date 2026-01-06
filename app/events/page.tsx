@@ -47,17 +47,29 @@ export default function EventsPage() {
         <div className="min-h-screen bg-background font-sans selection:bg-primary selection:text-white">
             <Navigation />
 
-            <main className="pt-24 pb-20">
-                <div className="container mx-auto px-4">
-                    {/* Header */}
-                    <div className="mb-12">
-                        <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter italic border-l-8 border-primary pl-6">
+            <main className="pb-20">
+                {/* Header with Background */}
+                <section className="relative py-24 bg-black overflow-hidden flex items-center justify-center">
+                    <div className="absolute inset-0 z-0 opacity-40">
+                        <img
+                            src="/images/event_nye_2026.jpg"
+                            alt="Background"
+                            className="w-full h-full object-cover blur-sm scale-105"
+                        />
+                    </div>
+                    <div className="absolute inset-0 bg-primary/20 mix-blend-multiply" />
+
+                    <div className="relative z-10 container mx-auto px-4 text-center">
+                        <h1 className="text-5xl md:text-8xl font-black uppercase tracking-tighter italic text-white leading-none drop-shadow-2xl">
                             Events
                         </h1>
-                        <p className="mt-4 text-muted-foreground font-medium uppercase tracking-widest text-sm">
-                            Upcoming and Past Events
+                        <p className="mt-6 text-primary font-bold uppercase tracking-[0.4em] text-sm md:text-base drop-shadow-md">
+                            Upcoming and Past moments
                         </p>
                     </div>
+                </section>
+
+                <div className="container mx-auto px-4 mt-20">
 
                     {/* UPCOMING EVENTS */}
                     <section className="mb-16">
