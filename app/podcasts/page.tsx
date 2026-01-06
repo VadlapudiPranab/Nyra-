@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
+import { Button } from "@/components/ui/button"
 import { Play, Mic2, Calendar } from "lucide-react"
 
 export default function PodcastsPage() {
