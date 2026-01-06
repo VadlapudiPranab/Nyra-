@@ -84,8 +84,20 @@ export function AudioPlayer() {
 
   const changeLanguage = (lang: string) => {
     if (lang === currentLanguage) return
+
+    // Explicitly pause first
+    setIsPlaying(false)
+    if (audioRef.current) {
+      audioRef.current.pause()
+    }
+
+    // Then change language (which triggers the playlist fetch and resets index)
     setCurrentLanguage(lang)
-    setIsPlaying(true) // Start playing automatically on language change
+
+    // Start playing after a tiny delay to allow source update
+    setTimeout(() => {
+      setIsPlaying(true)
+    }, 100)
   }
 
   if (!isVisible) return null

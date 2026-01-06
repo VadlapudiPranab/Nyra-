@@ -23,9 +23,8 @@ export function Navigation() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/schedule", label: "Schedule" },
-    { href: "/our-team", label: "The Voice" },
     { href: "/services", label: "Services" },
+    { href: "/podcasts", label: "Podcast" },
     {
       href: "/gallery",
       label: "Gallery",
@@ -35,8 +34,9 @@ export function Navigation() {
         { href: "/gallery/2019", label: "New Year 2019 – Celebrations" },
       ]
     },
-    { href: "/podcasts", label: "Podcasts" },
-    { href: "/contact", label: "Contact" },
+    { href: "/news", label: "News" },
+    { href: "/our-team", label: "Team" },
+    { href: "/contact", label: "Contact Us" },
   ];
 
   return (

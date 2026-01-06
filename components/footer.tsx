@@ -31,17 +31,30 @@ export function Footer() {
             ))}
           </nav>
 
-          {/* Socials */}
-          <div className="flex items-center gap-4">
-            <Link href="https://facebook.com/radionyrausa" className="text-gray-400 hover:text-white transition-colors"><Facebook className="w-5 h-5" /></Link>
-            <Link href="https://instagram.com/radionyrausa" className="text-gray-400 hover:text-white transition-colors"><Instagram className="w-5 h-5" /></Link>
-            <Link href="https://twitter.com/NyraUsa" className="text-gray-400 hover:text-white transition-colors"><Twitter className="w-5 h-5" /></Link>
-            <Link href="https://youtube.com/c/RadioNyraUSA" className="text-gray-400 hover:text-white transition-colors"><Youtube className="w-5 h-5" /></Link>
+          {/* Socials & Voice Assistant */}
+          <div className="flex flex-col items-center md:items-end gap-6">
+            <div className="flex items-center gap-4">
+              <Link href="https://facebook.com/radionyrausa" target="_blank" className="text-gray-400 hover:text-white transition-colors"><Facebook className="w-5 h-5" /></Link>
+              <Link href="https://instagram.com/radionyrausa" target="_blank" className="text-gray-400 hover:text-white transition-colors"><Instagram className="w-5 h-5" /></Link>
+              <Link href="https://twitter.com/NyraUsa" target="_blank" className="text-gray-400 hover:text-white transition-colors"><Twitter className="w-5 h-5" /></Link>
+              <Link href="https://youtube.com/c/RadioNyraUSA" target="_blank" className="text-gray-400 hover:text-white transition-colors"><Youtube className="w-5 h-5" /></Link>
+              <Link href="https://radionyra.com/" target="_blank" className="text-gray-400 hover:text-white transition-colors"><Linkedin className="w-5 h-5" /></Link>
+            </div>
+
+            <div className="text-center md:text-right">
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500">
+                Listen to Radio Nyra on <span className="text-white">OK Google, Alexa & Siri</span>
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500 uppercase tracking-wider">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-[10px] text-gray-500 uppercase tracking-widest font-bold">
           <p>© {new Date().getFullYear()} Radio Nyra. All rights reserved.</p>
+          <div className="flex gap-6">
+            <Link href="https://radionyra.com/" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="https://radionyra.com/" className="hover:text-white transition-colors">Terms of Service</Link>
+          </div>
           <p>Contact: info@radionyra.com</p>
         </div>
       </div>

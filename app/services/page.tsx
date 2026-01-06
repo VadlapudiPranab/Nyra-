@@ -1,5 +1,4 @@
-"use client"
-
+import Link from "next/link"
 import { useState } from "react"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
@@ -418,7 +417,9 @@ export default function ServicesPage() {
                                     ))}
                                 </CardContent>
                                 <CardFooter>
-                                    <Button className="w-full bg-green-600 hover:bg-green-700 font-bold uppercase">Get Started</Button>
+                                    <Button className="w-full bg-green-600 hover:bg-green-700 font-bold uppercase" asChild>
+                                        <Link href="https://radionyra.com/">Get Started</Link>
+                                    </Button>
                                 </CardFooter>
                             </Card>
 
@@ -444,7 +445,9 @@ export default function ServicesPage() {
                                     ))}
                                 </CardContent>
                                 <CardFooter>
-                                    <Button className="w-full bg-blue-600 hover:bg-blue-700 font-bold uppercase">Choose Growth</Button>
+                                    <Button className="w-full bg-blue-600 hover:bg-blue-700 font-bold uppercase" asChild>
+                                        <Link href="https://radionyra.com/">Choose Growth</Link>
+                                    </Button>
                                 </CardFooter>
                             </Card>
 
@@ -469,7 +472,9 @@ export default function ServicesPage() {
                                     ))}
                                 </CardContent>
                                 <CardFooter>
-                                    <Button className="w-full bg-purple-600 hover:bg-purple-700 font-bold uppercase">Go Premium</Button>
+                                    <Button className="w-full bg-purple-600 hover:bg-purple-700 font-bold uppercase" asChild>
+                                        <Link href="https://radionyra.com/">Go Premium</Link>
+                                    </Button>
                                 </CardFooter>
                             </Card>
 
@@ -496,7 +501,7 @@ export default function ServicesPage() {
                                 </CardContent>
                                 <CardFooter>
                                     <Button className="w-full bg-primary hover:bg-primary/90 font-bold uppercase" asChild>
-                                        <a href="mailto:ads@radionyra.com">Request Live</a>
+                                        <Link href="https://radionyra.com/">Request Live</Link>
                                     </Button>
                                 </CardFooter>
                             </Card>

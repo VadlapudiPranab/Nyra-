@@ -3,7 +3,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { Play, Calendar, Radio, Users, Mic2, ArrowRight } from "lucide-react"
+import { Play, Calendar, Radio, Users, Mic2, ArrowRight, Smartphone, Apple } from "lucide-react"
 import { CountUp } from "@/components/ui/count-up"
 import { ListenLiveButton } from "@/components/listen-live-button"
 
@@ -55,23 +55,58 @@ export default function HomePage() {
           </div>
 
           <div className="relative z-20 container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-8xl font-bold tracking-tighter text-primary mb-6 uppercase leading-tight drop-shadow-xl">
-              The Voice of India in USA
+            <h1 className="text-5xl md:text-9xl font-black tracking-tighter mb-8 uppercase leading-[0.8] drop-shadow-2xl italic">
+              <span className="text-white block">Voice of</span>
+              <span className="text-primary block mt-2">India in USA</span>
             </h1>
 
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mt-8 w-full max-w-md md:max-w-none mx-auto">
-              <ListenLiveButton className="w-full md:w-auto text-lg font-bold uppercase tracking-widest bg-primary hover:bg-primary/90 text-white rounded-none transition-all hover:scale-105 shadow-2xl h-16 w-full md:w-auto" />
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mt-12 w-full max-w-4xl mx-auto">
+              <ListenLiveButton className="w-full md:w-auto text-lg font-bold uppercase tracking-widest bg-primary hover:bg-primary/90 text-white rounded-none transition-all hover:scale-105 shadow-2xl h-16 px-12" />
 
-              <Button
-                size="lg"
-                variant="outline"
-                className="h-16 px-10 text-lg font-bold uppercase tracking-widest text-white border-2 border-white bg-transparent hover:bg-white hover:text-black rounded-none transition-all hover:scale-105 shadow-2xl w-full md:w-auto"
-                asChild
-              >
-                <Link href="/schedule">
-                  <Calendar className="mr-3 w-5 h-5" /> View Schedule
-                </Link>
-              </Button>
+              {/* App Download Buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="h-16 px-8 text-sm font-bold uppercase tracking-widest text-white border-2 border-white bg-transparent hover:bg-white hover:text-black rounded-none transition-all hover:scale-105 shadow-2xl"
+                  asChild
+                >
+                  <Link href="https://radionyra.com/">
+                    <Smartphone className="mr-3 w-5 h-5" /> Download on Google Play
+                  </Link>
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="h-16 px-8 text-sm font-bold uppercase tracking-widest text-white border-2 border-white bg-transparent hover:bg-white hover:text-black rounded-none transition-all hover:scale-105 shadow-2xl"
+                  asChild
+                >
+                  <Link href="https://radionyra.com/">
+                    <Apple className="mr-3 w-5 h-5" /> Download on App Store
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Voice Assistant Section */}
+            <div className="mt-16 animate-in fade-in slide-in-from-bottom duration-1000 delay-500">
+              <div className="flex items-center justify-center gap-8 mb-4">
+                <div className="flex flex-col items-center gap-2 group">
+                  <img src="https://www.gstatic.com/images/branding/product/2x/google_assistant_48dp.png" alt="Google Assistant" className="w-8 h-8 grayscale group-hover:grayscale-0 transition-all opacity-70 group-hover:opacity-100" />
+                  <span className="text-[10px] font-bold text-white/50 uppercase tracking-widest group-hover:text-white transition-colors">OK Google</span>
+                </div>
+                <div className="flex flex-col items-center gap-2 group">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Amazon_Alexa_logo.svg" alt="Alexa" className="w-8 h-8 grayscale invert group-hover:grayscale-0 group-hover:invert-0 transition-all opacity-70 group-hover:opacity-100" />
+                  <span className="text-[10px] font-bold text-white/50 uppercase tracking-widest group-hover:text-white transition-colors">Alexa</span>
+                </div>
+                <div className="flex flex-col items-center gap-2 group">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Siri_logo.png" alt="Siri" className="w-8 h-8 grayscale group-hover:grayscale-0 transition-all opacity-70 group-hover:opacity-100" />
+                  <span className="text-[10px] font-bold text-white/50 uppercase tracking-widest group-hover:text-white transition-colors">Siri</span>
+                </div>
+              </div>
+              <p className="text-xs font-bold uppercase tracking-[0.3em] text-white/40">
+                Listen to Radio Nyra on <span className="text-white">OK Google, Alexa & Siri</span>
+              </p>
             </div>
           </div>
         </section>
@@ -155,7 +190,9 @@ export default function HomePage() {
                     </div>
                     <h3 className="text-xl font-bold uppercase tracking-tight mb-1 group-hover:text-primary transition-colors leading-none">{ev.title}</h3>
                     <p className="text-muted-foreground text-[10px] font-bold uppercase tracking-wide mb-3">{ev.location}</p>
-                    <Button variant="outline" className="w-full text-[10px] font-bold uppercase tracking-widest rounded-none h-8">Get Details</Button>
+                    <Button variant="outline" className="w-full text-[10px] font-bold uppercase tracking-widest rounded-none h-8" asChild>
+                      <Link href="https://radionyra.com/">Get Details</Link>
+                    </Button>
                   </div>
                 </div>
               ))}

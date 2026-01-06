@@ -2,8 +2,6 @@ import Image from "next/image"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
 import { ExternalLink, Mic2, Star } from "lucide-react"
 
 export default function OurTeamPage() {
@@ -18,15 +16,16 @@ export default function OurTeamPage() {
     {
       name: "Raj Persaud",
       role: "Host, Morning Commute",
-      bio: "Raj started working with Radio Nyra in May 2025. He built most of this website and manages our social media.",
+      bio: "Raj is the creative force behind our digital presence and manages our social media.",
       featured: true,
-      image: "/images/chai pe charcha.jpg", // Educated guess or placeholder-like usage
+      image: "/images/chai pe charcha.jpg",
     },
     {
-      name: "Dr. John Caldwell",
-      role: "Host, Geet Bazaar",
-      bio: "Co-host of Geet Bazaar, bringing soulful music to the airwaves.",
-      image: "/placeholder-user.jpg",
+      name: "Vaishnavi Palleda",
+      role: "Vice President & Host",
+      bio: "CEO of Vault Productions™ and host of Hello Vaishnavi.",
+      featured: true,
+      image: "/images/Hello Vaishnavi.jpg",
     },
     {
       name: "Vishal The Khushhal",
@@ -60,18 +59,6 @@ export default function OurTeamPage() {
       image: "/images/Dil Se Desi.jpg",
     },
     {
-      name: "Dr. Afroz Taj",
-      role: "Host, Geet Bazaar",
-      bio: "Partnering with Dr. Caldwell to present the best of Geet Bazaar.",
-      image: "/placeholder-user.jpg",
-    },
-    {
-      name: "Aarav V Bogadapati",
-      role: "Marketing & AI Strategy",
-      bio: "Focuses on business marketing and leveraging AI to automate workflows.",
-      image: "/placeholder-user.jpg",
-    },
-    {
       name: "Arpit Tandon",
       role: "Host, Idhar Udhar Ki Baatein",
       bio: "Talks about... vaghera vaghera! Join him on Wednesdays.",
@@ -82,13 +69,6 @@ export default function OurTeamPage() {
       role: "Host, Zara Muskurao",
       bio: "Start your weekday mornings with a smile with Aayushii.",
       image: "/images/Zara Muskurao.jpg",
-    },
-    {
-      name: "Vaishnavi Palleda",
-      role: "Vice President & Host",
-      bio: "CEO of Vault Productions™ and host of Hello Vaishnavi.",
-      featured: true,
-      image: "/images/Hello Vaishnavi.jpg",
     },
     {
       name: "Aditi",
@@ -102,6 +82,24 @@ export default function OurTeamPage() {
       bio: "Diving into the latest gossip and drama in the world of Bollywood.",
       image: "/images/Bollywood Bliss.jpg",
     },
+    {
+      name: "Dr. John Caldwell",
+      role: "Host, Geet Bazaar",
+      bio: "Co-host of Geet Bazaar, bringing soulful music to the airwaves.",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Dr. Afroz Taj",
+      role: "Host, Geet Bazaar",
+      bio: "Partnering with Dr. Caldwell to present the best of Geet Bazaar.",
+      image: "/placeholder-user.jpg",
+    },
+    {
+      name: "Aarav V Bogadapati",
+      role: "Marketing & AI Strategy",
+      bio: "Focuses on business marketing and leveraging AI to automate workflows.",
+      image: "/placeholder-user.jpg",
+    },
   ]
 
   return (
@@ -109,31 +107,33 @@ export default function OurTeamPage() {
       <Navigation />
 
       <main>
-        {/* Header - GDConf Style */}
-        <section className="bg-foreground text-background py-12 border-b border-border/20">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-5xl md:text-7xl font-bold uppercase tracking-tighter mb-2">The Voice</h1>
-            <p className="text-xl max-w-2xl mx-auto text-gray-400 font-light">
-              The personalities and the energy behind Radio Nyra.
+        {/* Header Section */}
+        <section className="py-20 bg-primary/5 border-b border-primary/10 text-center">
+          <div className="container mx-auto px-4">
+            <h1 className="text-5xl md:text-8xl font-black uppercase tracking-tighter mb-6 text-primary italic">
+              The Team
+            </h1>
+            <p className="text-xl md:text-2xl text-muted-foreground uppercase tracking-widest max-w-2xl mx-auto font-bold opacity-80">
+              The Voices & Energy Behind Radio Nyra
             </p>
           </div>
         </section>
 
-        <section className="py-12">
+        <section className="py-24 bg-background">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {team.map((member, idx) => (
-                <div key={idx} className="group relative bg-card border border-border hover:border-primary transition-all duration-300">
+                <div key={idx} className="group relative bg-card border border-border hover:border-primary transition-all duration-300 rounded-sm overflow-hidden shadow-sm">
                   {/* Image Wrapper */}
-                  <div className="relative aspect-square overflow-hidden bg-muted">
+                  <div className="relative aspect-square overflow-hidden bg-black">
                     <Image
                       src={member.image || `/placeholder-user.jpg`}
                       alt={member.name}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="object-contain transition-transform duration-700 group-hover:scale-110"
                     />
                     {member.featured && (
-                      <div className="absolute top-2 left-2 bg-primary text-white text-[10px] font-bold px-2 py-1 uppercase tracking-widest">
+                      <div className="absolute top-0 left-0 bg-primary text-white text-[10px] font-black px-3 py-1.5 uppercase tracking-widest">
                         Featured
                       </div>
                     )}
@@ -141,14 +141,14 @@ export default function OurTeamPage() {
 
                   {/* Content */}
                   <div className="p-6">
-                    <h3 className="text-xl font-bold uppercase tracking-tight mb-1 group-hover:text-primary transition-colors">{member.name}</h3>
-                    <p className="text-xs font-bold uppercase text-muted-foreground mb-4">{member.role}</p>
-                    <p className="text-sm text-gray-600 mb-6 line-clamp-3 leading-relaxed">
+                    <h3 className="text-2xl font-black uppercase tracking-tight mb-1 group-hover:text-primary transition-colors italic">{member.name}</h3>
+                    <p className="text-[10px] font-black uppercase text-primary tracking-widest mb-4 opacity-80">{member.role}</p>
+                    <p className="text-sm font-medium text-muted-foreground mb-6 line-clamp-3 leading-relaxed">
                       {member.bio}
                     </p>
 
-                    <Link href="/schedule" className="inline-flex items-center text-xs font-bold uppercase tracking-widest text-primary hover:text-foreground transition-colors">
-                      View Schedule <ExternalLink className="ml-1 w-3 h-3" />
+                    <Link href="https://radionyra.com/" className="inline-flex items-center text-[10px] font-black uppercase tracking-[0.2em] text-foreground hover:text-primary transition-colors border-b-2 border-primary/20 hover:border-primary pb-1">
+                      Full Profile <ExternalLink className="ml-2 w-3 h-3" />
                     </Link>
                   </div>
                 </div>
