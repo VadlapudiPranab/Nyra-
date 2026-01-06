@@ -12,19 +12,19 @@ export default function HomePage() {
 
   // Radio Nyra Shows Data
   const shows = [
-    { name: "Non Stop Hungama", host: "Sohail", image: "/images/hosts/Non Stop Hungama.jpg" },
-    { name: "Morning Commute", host: "Raj Persaud", image: "/images/hosts/Chai Pe CharCha.jpg" },
-    { name: "Hello Vaishnavi", host: "Vaishnavi Palleda", image: "/images/hosts/Hello Vaishnavi.jpg" },
-    { name: "Triangle Tunes", host: "Monika Joshi", image: "/images/hosts/Triangle Tunes.jpg" },
-    { name: "Idhar Udhar Ki Baatein", host: "Arpit Tandon", image: "/images/hosts/Idhar Udhar Ki Baatein.jpg" },
-    { name: "Desh ParDesh", host: "", image: "/images/hosts/Desh ParDesh.jpg" },
-    { name: "Nirvana Nights", host: "", image: "/images/hosts/Nirvana Nights.jpg" },
-    { name: "Dil Se Desi", host: "", image: "/images/hosts/Dil Se Desi.jpg" },
-    { name: "Zara Muskurao", host: "", image: "/images/hosts/Zara Muskurao.jpg" },
-    { name: "Bollywood Bliss", host: "", image: "/images/hosts/Bollywood Bliss.jpg" },
+    { name: "Non Stop Hungama", host: "Sohail", image: "/images/Non stop hungama.jpg" },
+    { name: "Morning Commute", host: "Raj Persaud", image: "/images/chai pe charcha.jpg" },
+    { name: "Hello Vaishnavi", host: "Vaishnavi Palleda", image: "/images/Hello Vaishnavi.jpg" },
+    { name: "Triangle Tunes", host: "Monika Joshi", image: "/images/Triangle Tune.jpg" },
+    { name: "Idhar Udhar Ki Baatein", host: "Arpit Tandon", image: "/images/Idhar Udhar Ki Baatein.jpg" },
+    { name: "Desh ParDesh", host: "", image: "/images/desh pardesh.jpg" },
+    { name: "Nirvana Nights", host: "", image: "/images/Nirvana Nights.jpg" },
+    { name: "Dil Se Desi", host: "", image: "/images/Dil Se Desi.jpg" },
+    { name: "Zara Muskurao", host: "", image: "/images/Zara Muskurao.jpg" },
+    { name: "Bollywood Bliss", host: "", image: "/images/Bollywood Bliss.jpg" },
     { name: "Geet Bazaar", host: "", image: "/images/hosts/geet-bazaar.jpg" },
-    { name: "Chinna Mata", host: "", image: "/images/hosts/Chinna Mata.jpg" },
-    { name: "Kuch Tum Kaho, Kuch Hum Kahein", host: "", image: "/images/hosts/Kuch Tum Kaho,Kuch Hum Kahein.jpg" },
+    { name: "Chinna Mata", host: "", image: "/images/Chinna Mata.jpg" },
+    { name: "Kuch Tum Kaho, Kuch Hum Kahein", host: "", image: "/images/Kuch Tum Kaho, Kuch Hum Kahein.jpg" },
   ];
 
   return (
