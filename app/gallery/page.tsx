@@ -11,12 +11,12 @@ export default function GalleryPage() {
         },
         {
             title: "New Year 2018 – Bollywood Bash",
-            image: "/images/new-year-2018-bollywood-bash.jpg",
+            image: "/New Year 2018 – Bollywood BASH/513062840_10061386530596749_1269707655621158881_n.jpg",
             href: "/gallery/2018"
         },
         {
             title: "New Year 2019 – Celebrations",
-            image: "/images/new-year-2019-celebrations.jpg",
+            image: "/New Year 2019 -Celebrations/48407416_1942179082517575_8863305223121141760_n.jpg",
             href: "/gallery/2019"
         }
     ];

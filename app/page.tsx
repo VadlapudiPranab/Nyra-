@@ -11,11 +11,11 @@ export default function HomePage() {
 
   // Data for Hosts
   const hosts = [
-    { name: "Arpit Tandon", show: "Idhar Udhar Ki Baatein", image: "/images/Idhar Udhar Ki Baatein.jpg" },
-    { name: "Raj Persaud", show: "Morning Commute", image: "/images/chai pe charcha.jpg" },
-    { name: "Monika Joshi", show: "Triangle Tunes", image: "/images/Triangle Tune.jpg" },
-    { name: "Vaishnavi Palleda", show: "Hello Vaishnavi", image: "/images/Hello Vaishnavi.jpg" },
-    { name: "Sohail", show: "Non Stop Hungama", image: "/images/Non stop hungama.jpg" },
+    { name: "Arpit Tandon", show: "Idhar Udhar Ki Baatein", image: "/images/hosts/Idhar Udhar Ki Baatein.jpg" },
+    { name: "Raj Persaud", show: "Morning Commute", image: "/images/hosts/Chai Pe CharCha.jpg" },
+    { name: "Monika Joshi", show: "Triangle Tunes", image: "/images/hosts/Triangle Tunes.jpg" },
+    { name: "Vaishnavi Palleda", show: "Hello Vaishnavi", image: "/images/hosts/Hello Vaishnavi.jpg" },
+    { name: "Sohail", show: "Non Stop Hungama", image: "/images/hosts/Non Stop Hungama.jpg" },
   ];
 
   // Upcoming Events WITH IMAGES
@@ -129,7 +129,7 @@ export default function HomePage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {hosts.map((host, i) => (
-                <div key={i} className="group bg-card border border-border/50 hover:shadow-xl transition-all duration-300">
+                <Link key={i} href="/schedule" className="group block bg-card border border-border/50 hover:shadow-xl transition-all duration-300">
                   <div className="relative aspect-[4/5] bg-black overflow-hidden">
                     <img
                       src={host.image}
@@ -139,10 +139,10 @@ export default function HomePage() {
                     <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
                   <div className="p-3 border-t border-border">
-                    <h3 className="text-lg font-bold uppercase tracking-tight text-foreground">{host.name}</h3>
+                    <h3 className="text-lg font-bold uppercase tracking-tight text-foreground line-clamp-1">{host.name}</h3>
                     <p className="text-[10px] font-bold uppercase text-primary tracking-wider opacity-80">{host.show}</p>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
