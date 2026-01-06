@@ -25,7 +25,13 @@ export function Navigation() {
     { href: "/about", label: "About" },
     { href: "/schedule", label: "Schedule" },
     { href: "/our-team", label: "The Voice" },
-    { href: "/services", label: "Services" },
+    {
+      href: "/services",
+      label: "Services",
+      subLinks: [
+        { href: "/services/podcast", label: "Create a Podcast" },
+      ]
+    },
     {
       href: "/gallery",
       label: "Gallery",

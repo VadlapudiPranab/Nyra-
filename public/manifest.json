@@ -4,16 +4,16 @@
   "description": "The Voice of the Indian Subcontinent in the USA",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#E91E63",
+  "background_color": "#000000",
+  "theme_color": "#ff3366",
   "icons": [
     {
-      "src": "/icon-light-32x32.png",
+      "src": "/favicon-32x32.png",
       "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "/apple-icon.png",
+      "src": "/apple-touch-icon.png",
       "sizes": "180x180",
       "type": "image/png"
     }
