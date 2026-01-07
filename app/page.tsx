@@ -12,19 +12,19 @@ export default function HomePage() {
 
   // Radio Nyra Shows Data
   const shows = [
-    { name: "Non Stop Hungama", host: "Sohail", image: "/images/hosts/Non Stop Hungama.jpg" },
-    { name: "Morning Commute", host: "Raj Persaud", image: "/images/hosts/CHA PE CHARCHA.jpg" },
-    { name: "Hello Vaishnavi", host: "Vaishnavi Palleda", image: "/images/hosts/HELLO VAISHNAVI.jpg" },
-    { name: "Triangle Tunes", host: "Monika Joshi", image: "/images/hosts/TRAINGLE TUNES.jpg" },
-    { name: "Idhar Udhar Ki Baatein", host: "Arpit Tandon", image: "/images/hosts/IDHAR UDHAR KI BAATEIN.jpg" },
-    { name: "Desh ParDesh", host: "Vishal The Khushhal", image: "/images/hosts/DESI PARDESI.jpg" },
-    { name: "Nirvana Nights", host: "Shivani", image: "/images/hosts/Nirvana Nights.jpg" },
-    { name: "Dil Se Desi", host: "Jyoti", image: "/images/hosts/Dil Se Desi.jpg" },
-    { name: "Zara Muskurao", host: "Aayushii Rode", image: "/images/hosts/ZARA MUSKURAO.jpg" },
-    { name: "Bollywood Bliss", host: "Bharti Rathore", image: "/images/hosts/BOLLYWOOD BLISS.jpg" },
+    { name: "Non Stop Hungama", host: "Sohail", image: "/images/hosts/non-stop-hungama.jpg" },
+    { name: "Morning Commute", host: "Raj Persaud", image: "/images/hosts/cha-pe-charcha.jpg" },
+    { name: "Hello Vaishnavi", host: "Vaishnavi Palleda", image: "/images/hosts/hello-vaishnavi.jpg" },
+    { name: "Triangle Tunes", host: "Monika Joshi", image: "/images/hosts/triangle-tunes.jpg" },
+    { name: "Idhar Udhar Ki Baatein", host: "Arpit Tandon", image: "/images/hosts/idhar-udhar-ki-baatein.jpg" },
+    { name: "Desh ParDesh", host: "Vishal The Khushhal", image: "/images/hosts/desi-pardesi.jpg" },
+    { name: "Nirvana Nights", host: "Shivani", image: "/images/hosts/nirvana-nights.jpg" },
+    { name: "Dil Se Desi", host: "Jyoti", image: "/images/hosts/dil-se-desi.jpg" },
+    { name: "Zara Muskurao", host: "Aayushii Rode", image: "/images/hosts/zara-muskurao.jpg" },
+    { name: "Bollywood Bliss", host: "Bharti Rathore", image: "/images/hosts/bollywood-bliss.jpg" },
     { name: "Geet Bazaar", host: "Dr. Taj & Dr. Caldwell", image: "/images/hosts/geet-bazaar.jpg" },
-    { name: "Chinna Mata", host: "Kanthi", image: "/images/hosts/Chinna Mata.jpg" },
-    { name: "Kuch Tum Kaho, Kuch Hum Kahein", host: "Aditi", image: "/images/hosts/Kuch Tum Kaho, Kuch Hum Kahein.jpg" },
+    { name: "Chinna Mata", host: "Kanthi", image: "/images/hosts/chinna-mata.jpg" },
+    { name: "Kuch Tum Kaho, Kuch Hum Kahein", host: "Aditi", image: "/images/hosts/kuch-tum-kaho-kuch-hum-kahein.jpg" },
   ];
 
   return (
