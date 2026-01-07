@@ -12,19 +12,19 @@ export default function HomePage() {
 
   // Radio Nyra Shows Data
   const shows = [
-    { name: "Non Stop Hungama", host: "Sohail", image: "/images/Non stop hungama.jpg" },
-    { name: "Morning Commute", host: "Raj Persaud", image: "/images/chai pe charcha.jpg" },
-    { name: "Hello Vaishnavi", host: "Vaishnavi Palleda", image: "/images/Hello Vaishnavi.jpg" },
-    { name: "Triangle Tunes", host: "Monika Joshi", image: "/images/Triangle Tune.jpg" },
-    { name: "Idhar Udhar Ki Baatein", host: "Arpit Tandon", image: "/images/Idhar Udhar Ki Baatein.jpg" },
-    { name: "Desh ParDesh", host: "", image: "/images/desh pardesh.jpg" },
-    { name: "Nirvana Nights", host: "", image: "/images/Nirvana Nights.jpg" },
-    { name: "Dil Se Desi", host: "", image: "/images/Dil Se Desi.jpg" },
-    { name: "Zara Muskurao", host: "", image: "/images/Zara Muskurao.jpg" },
-    { name: "Bollywood Bliss", host: "", image: "/images/Bollywood Bliss.jpg" },
-    { name: "Geet Bazaar", host: "", image: "/images/hosts/geet-bazaar.jpg" },
-    { name: "Chinna Mata", host: "", image: "/images/Chinna Mata.jpg" },
-    { name: "Kuch Tum Kaho, Kuch Hum Kahein", host: "", image: "/images/Kuch Tum Kaho, Kuch Hum Kahein.jpg" },
+    { name: "Non Stop Hungama", host: "Sohail", image: "/images/hosts/Non Stop Hungama.jpg" },
+    { name: "Morning Commute", host: "Raj Persaud", image: "/images/hosts/CHA PE CHARCHA.jpg" },
+    { name: "Hello Vaishnavi", host: "Vaishnavi Palleda", image: "/images/hosts/HELLO VAISHNAVI.jpg" },
+    { name: "Triangle Tunes", host: "Monika Joshi", image: "/images/hosts/TRAINGLE TUNES.jpg" },
+    { name: "Idhar Udhar Ki Baatein", host: "Arpit Tandon", image: "/images/hosts/IDHAR UDHAR KI BAATEIN.jpg" },
+    { name: "Desh ParDesh", host: "Vishal The Khushhal", image: "/images/hosts/DESI PARDESI.jpg" },
+    { name: "Nirvana Nights", host: "Shivani", image: "/images/hosts/Nirvana Nights.jpg" },
+    { name: "Dil Se Desi", host: "Jyoti", image: "/images/hosts/Dil Se Desi.jpg" },
+    { name: "Zara Muskurao", host: "Aayushii Rode", image: "/images/hosts/ZARA MUSKURAO.jpg" },
+    { name: "Bollywood Bliss", host: "Bharti Rathore", image: "/images/hosts/BOLLYWOOD BLISS.jpg" },
+    { name: "Geet Bazaar", host: "Dr. Taj & Dr. Caldwell", image: "/images/hosts/geet-bazaar.jpg" },
+    { name: "Chinna Mata", host: "Kanthi", image: "/images/hosts/Chinna Mata.jpg" },
+    { name: "Kuch Tum Kaho, Kuch Hum Kahein", host: "Aditi", image: "/images/hosts/Kuch Tum Kaho, Kuch Hum Kahein.jpg" },
   ];
 
   return (
@@ -134,7 +134,7 @@ export default function HomePage() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {shows.map((show, i) => (
-                <div key={i} className="group bg-card border border-border/50 hover:shadow-2xl transition-all duration-300">
+                <Link href="/schedule" key={i} className="group bg-card border border-border/50 hover:shadow-2xl transition-all duration-300">
                   <div className="relative aspect-square overflow-hidden bg-black">
                     <img
                       src={show.image}
@@ -157,7 +157,7 @@ export default function HomePage() {
                       )}
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>

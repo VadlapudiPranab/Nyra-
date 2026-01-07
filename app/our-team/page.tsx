@@ -18,21 +18,21 @@ export default function OurTeamPage() {
       role: "Host, Morning Commute",
       bio: "Raj is the creative force behind our digital presence and manages our social media.",
       featured: true,
-      image: "/images/hosts/Chai Pe CharCha.jpg",
+      image: "/images/hosts/CHA PE CHARCHA.jpg",
     },
     {
       name: "Vaishnavi Palleda",
       role: "Vice President & Host",
       bio: "CEO of Vault Productions™ and host of Hello Vaishnavi.",
       featured: true,
-      image: "/images/hosts/Hello Vaishnavi.jpg",
+      image: "/images/hosts/HELLO VAISHNAVI.jpg",
     },
     {
       name: "Vishal The Khushhal",
       role: "Host, Desh Pradesh",
       bio: "Vishal is here for your afternoon excitement - our vibrant host.",
       featured: true,
-      image: "/images/hosts/Desh ParDesh.jpg",
+      image: "/images/hosts/DESI PARDESI.jpg",
     },
     {
       name: "Shivani",
@@ -44,7 +44,7 @@ export default function OurTeamPage() {
       name: "Monika Joshi",
       role: "Host, Triangle Tunes & Talks",
       bio: "Catch her vibrant energy every night from 10:00pm - 1:00am.",
-      image: "/images/hosts/Triangle Tunes.jpg",
+      image: "/images/hosts/TRAINGLE TUNES.jpg",
     },
     {
       name: "Kanthi",
@@ -62,25 +62,25 @@ export default function OurTeamPage() {
       name: "Arpit Tandon",
       role: "Host, Idhar Udhar Ki Baatein",
       bio: "Talks about... vaghera vaghera! Join him on Wednesdays.",
-      image: "/images/hosts/Idhar Udhar Ki Baatein.jpg",
+      image: "/images/hosts/IDHAR UDHAR KI BAATEIN.jpg",
     },
     {
       name: "Aayushii Rode",
       role: "Host, Zara Muskurao",
       bio: "Start your weekday mornings with a smile with Aayushii.",
-      image: "/images/hosts/Zara Muskurao.jpg",
+      image: "/images/hosts/ZARA MUSKURAO.jpg",
     },
     {
       name: "Aditi",
       role: "Host, Unfiltered Gup Shup",
       bio: "Your gentle Saturday morning wake up show host.",
-      image: "/images/hosts/Kuch Tum Kaho,Kuch Hum Kahein.jpg",
+      image: "/images/hosts/Kuch Tum Kaho, Kuch Hum Kahein.jpg",
     },
     {
       name: "Bharti Rathore",
       role: "Host, Bollywood Bliss",
       bio: "Diving into the latest gossip and drama in the world of Bollywood.",
-      image: "/images/hosts/Bollywood Bliss.jpg",
+      image: "/images/hosts/BOLLYWOOD BLISS.jpg",
     },
     {
       name: "Dr. John Caldwell",
@@ -93,12 +93,6 @@ export default function OurTeamPage() {
       role: "Host, Geet Bazaar",
       bio: "Partnering with Dr. Caldwell to present the best of Geet Bazaar.",
       image: "/images/hosts/geet-bazaar.jpg",
-    },
-    {
-      name: "Aarav V Bogadapati",
-      role: "Marketing & AI Strategy",
-      bio: "Focuses on business marketing and leveraging AI to automate workflows.",
-      image: "/placeholder-user.jpg",
     },
   ]
 
