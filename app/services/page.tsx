@@ -244,9 +244,8 @@ export default function ServicesPage() {
                             </Card>
 
                             {/* II. Growth Package */}
-                            <Card className="border-blue-500/20 bg-card hover:shadow-2xl hover:shadow-blue-500/5 transition-all outline outline-2 outline-blue-500/50 scale-105 z-10">
-                                <CardHeader className="text-center bg-blue-500/5 pb-8 relative">
-                                    <div className="absolute top-4 left-1/2 -translate-x-1/2 px-3 py-1 bg-blue-500 text-white text-[10px] font-black rounded-full uppercase">Popular</div>
+                            <Card className="border-blue-500/20 bg-card hover:shadow-2xl hover:shadow-blue-500/5 transition-all">
+                                <CardHeader className="text-center bg-blue-500/5 pb-8">
                                     <div className="text-blue-500 font-black uppercase mb-2">Growth</div>
                                     <CardTitle className="text-3xl font-black">PACKAGE II</CardTitle>
                                 </CardHeader>
