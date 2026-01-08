@@ -47,11 +47,11 @@ export function Footer() {
             <div className="text-center md:text-right">
               <div className="flex items-center justify-center md:justify-end gap-6 mb-3">
                 <div className="flex flex-col items-center gap-1 group">
-                  <img src="/images/icons/google-assistant.png" alt="Google Assistant" className="w-5 h-5 grayscale group-hover:grayscale-0 transition-all opacity-50 group-hover:opacity-100" />
+                  <img src="/images/icons/google-assistant.svg" alt="Google Assistant" className="w-5 h-5 grayscale group-hover:grayscale-0 transition-all opacity-50 group-hover:opacity-100" />
                   <span className="text-[8px] font-bold text-gray-500 uppercase tracking-widest group-hover:text-white transition-colors">OK Google</span>
                 </div>
                 <div className="flex flex-col items-center gap-1 group">
-                  <img src="/images/icons/alexa.svg" alt="Alexa" className="w-5 h-5 grayscale invert group-hover:grayscale-0 group-hover:invert-0 transition-all opacity-50 group-hover:opacity-100" />
+                  <img src="/images/icons/alexa.png" alt="Alexa" className="w-5 h-5 grayscale invert group-hover:grayscale-0 group-hover:invert-0 transition-all opacity-50 group-hover:opacity-100" />
                   <span className="text-[8px] font-bold text-gray-500 uppercase tracking-widest group-hover:text-white transition-colors">Alexa</span>
                 </div>
                 <div className="flex flex-col items-center gap-1 group">

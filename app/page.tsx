@@ -94,7 +94,7 @@ export default function HomePage() {
                 <div className="flex flex-col items-center gap-4 group">
                   <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white/10 transition-all border border-white/10 shadow-xl backdrop-blur-sm hover:scale-105 duration-300">
                     <img
-                      src="/images/icons/google-assistant.png"
+                      src="/images/icons/google-assistant.svg"
                       alt="OK Google"
                       className="w-10 h-10 md:w-12 md:h-12 object-contain"
                     />
@@ -107,7 +107,7 @@ export default function HomePage() {
                 <div className="flex flex-col items-center gap-4 group">
                   <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white/10 transition-all border border-white/10 shadow-xl backdrop-blur-sm hover:scale-105 duration-300">
                     <img
-                      src="/images/icons/alexa.svg"
+                      src="/images/icons/alexa.png"
                       alt="Alexa"
                       className="w-10 h-10 md:w-12 md:h-12 object-contain brightness-0 invert"
                     />
