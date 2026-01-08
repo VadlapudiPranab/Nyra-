@@ -86,6 +86,59 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* VOICE ASSISTANT SECTION */}
+        <section className="py-12 md:py-16 bg-black text-white border-b border-white/10">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col items-center justify-center gap-8 max-w-4xl mx-auto">
+              <div className="flex items-center justify-center gap-8 md:gap-16">
+                <div className="flex flex-col items-center gap-3 group">
+                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white/10 transition-all border border-white/10">
+                    <img
+                      src="https://www.gstatic.com/images/branding/product/2x/google_assistant_48dp.png"
+                      alt="OK Google"
+                      className="w-10 h-10 md:w-12 md:h-12 group-hover:scale-110 transition-transform"
+                    />
+                  </div>
+                  <span className="text-xs md:text-sm font-bold uppercase tracking-widest text-white/80 group-hover:text-white transition-colors">
+                    OK GOOGLE
+                  </span>
+                </div>
+
+                <div className="flex flex-col items-center gap-3 group">
+                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white/10 transition-all border border-white/10">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Amazon_Alexa_logo.svg"
+                      alt="Alexa"
+                      className="w-10 h-10 md:w-12 md:h-12 invert group-hover:scale-110 transition-transform"
+                    />
+                  </div>
+                  <span className="text-xs md:text-sm font-bold uppercase tracking-widest text-white/80 group-hover:text-white transition-colors">
+                    ALEXA
+                  </span>
+                </div>
+
+                <div className="flex flex-col items-center gap-3 group">
+                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white/10 transition-all border border-white/10">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Siri_logo.png"
+                      alt="Siri"
+                      className="w-10 h-10 md:w-12 md:h-12 group-hover:scale-110 transition-transform"
+                    />
+                  </div>
+                  <span className="text-xs md:text-sm font-bold uppercase tracking-widest text-white/80 group-hover:text-white transition-colors">
+                    SIRI
+                  </span>
+                </div>
+              </div>
+
+              <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tight text-center">
+                <span className="text-white/60">LISTEN TO RADIO NYRA ON </span>
+                <span className="text-white">OK GOOGLE, ALEXA & SIRI</span>
+              </h2>
+            </div>
+          </div>
+        </section>
+
         {/* STATS */}
         <section className="py-6 bg-background border-b border-border/50">
           <div className="container mx-auto px-4">

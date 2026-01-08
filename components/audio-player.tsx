@@ -146,6 +146,9 @@ export function AudioPlayer() {
                 <h3 className="font-bold text-xs md:text-base uppercase tracking-tight truncate leading-tight">
                   {metadata.title}
                 </h3>
+                <p className="text-[8px] md:text-[10px] text-muted-foreground uppercase tracking-wider truncate mt-0.5">
+                  HKU: W220T 101.9FM, WLQM-CA 99.9FM, WOLP 1340AM
+                </p>
               </div>
             </div>
 
