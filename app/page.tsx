@@ -109,7 +109,7 @@ export default function HomePage() {
                     <img
                       src="/images/icons/alexa.png"
                       alt="Alexa"
-                      className="w-10 h-10 md:w-12 md:h-12 object-contain brightness-0 invert"
+                      className="w-10 h-10 md:w-12 md:h-12 object-contain"
                     />
                   </div>
                   <span className="text-sm font-bold uppercase tracking-widest text-white/60 group-hover:text-white transition-colors">
