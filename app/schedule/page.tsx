@@ -81,7 +81,7 @@ export default function SchedulePage() {
                             Radio Nyra is available 24/7. Don't miss out on our special weekend programs and exclusive community segments.
                         </p>
                         <Button className="h-16 px-12 text-lg font-black uppercase tracking-widest bg-primary hover:bg-primary/90 text-white rounded-none shadow-xl transition-all" asChild>
-                            <Link href="https://radionyra.com/">Set Reminder</Link>
+                            <Link href="/schedule">Set Reminder</Link>
                         </Button>
                     </div>
                 </section>

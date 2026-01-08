@@ -238,7 +238,7 @@ export default function ServicesPage() {
                                 </CardContent>
                                 <CardFooter>
                                     <Button className="w-full bg-green-600 hover:bg-green-700 font-bold uppercase" asChild>
-                                        <Link href="https://radionyra.com/">Get Started</Link>
+                                        <Link href="/contact">Get Started</Link>
                                     </Button>
                                 </CardFooter>
                             </Card>
@@ -265,7 +265,7 @@ export default function ServicesPage() {
                                 </CardContent>
                                 <CardFooter>
                                     <Button className="w-full bg-blue-600 hover:bg-blue-700 font-bold uppercase" asChild>
-                                        <Link href="https://radionyra.com/">Choose Growth</Link>
+                                        <Link href="/contact">Choose Growth</Link>
                                     </Button>
                                 </CardFooter>
                             </Card>
@@ -292,7 +292,7 @@ export default function ServicesPage() {
                                 </CardContent>
                                 <CardFooter>
                                     <Button className="w-full bg-purple-600 hover:bg-purple-700 font-bold uppercase" asChild>
-                                        <Link href="https://radionyra.com/">Go Premium</Link>
+                                        <Link href="/contact">Go Premium</Link>
                                     </Button>
                                 </CardFooter>
                             </Card>
@@ -320,7 +320,7 @@ export default function ServicesPage() {
                                 </CardContent>
                                 <CardFooter>
                                     <Button className="w-full bg-primary hover:bg-primary/90 font-bold uppercase" asChild>
-                                        <Link href="https://radionyra.com/">Request Live</Link>
+                                        <Link href="/contact">Request Live</Link>
                                     </Button>
                                 </CardFooter>
                             </Card>

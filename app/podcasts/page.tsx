@@ -95,7 +95,7 @@ export default function PodcastsPage() {
                                             <p className="text-[10px] font-black text-muted-foreground uppercase tracking-widest">Hosted by {pod.host}</p>
                                         </div>
 
-                                        <Link href="https://radionyra.com/" className="inline-flex items-center text-[10px] font-black uppercase tracking-[0.2em] text-foreground hover:text-primary transition-colors border-b-2 border-primary/20 hover:border-primary pb-1">
+                                        <Link href="/podcasts" className="inline-flex items-center text-[10px] font-black uppercase tracking-[0.2em] text-foreground hover:text-primary transition-colors border-b-2 border-primary/20 hover:border-primary pb-1">
                                             Watch Now
                                         </Link>
                                     </div>
@@ -262,7 +262,7 @@ export default function PodcastsPage() {
                         <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4 italic">Never Miss an Episode</h2>
                         <p className="text-white/80 font-bold uppercase tracking-widest text-xs mb-10">Subscribe to our newsletter for weekly podcast highlights.</p>
                         <Button className="h-16 px-12 text-lg font-black uppercase tracking-widest bg-white hover:bg-white/90 text-primary rounded-none shadow-xl transition-all" asChild>
-                            <Link href="https://radionyra.com/">Subscribe Now</Link>
+                            <Link href="/contact">Subscribe Now</Link>
                         </Button>
                     </div>
                 </section>

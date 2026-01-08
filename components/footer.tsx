@@ -38,7 +38,7 @@ export function Footer() {
               <Link href="https://instagram.com/radionyrausa" target="_blank" className="text-gray-400 hover:text-white transition-colors" title="Instagram"><Instagram className="w-5 h-5" /></Link>
               <Link href="https://twitter.com/NyraUsa" target="_blank" className="text-gray-400 hover:text-white transition-colors" title="Twitter"><Twitter className="w-5 h-5" /></Link>
               <Link href="https://youtube.com/c/RadioNyraUSA" target="_blank" className="text-gray-400 hover:text-white transition-colors" title="YouTube"><Youtube className="w-5 h-5" /></Link>
-              <Link href="https://radionyra.com/" target="_blank" className="text-gray-400 hover:text-white transition-colors" title="LinkedIn"><Linkedin className="w-5 h-5" /></Link>
+              <Link href="/contact" target="_blank" className="text-gray-400 hover:text-white transition-colors" title="LinkedIn"><Linkedin className="w-5 h-5" /></Link>
               <div className="w-px h-4 bg-white/10 mx-2" />
               <Link href="https://play.google.com/store/apps/details?id=com.bb2757c5ba19.app&pcampaignid=web_share&pli=1" target="_blank" className="text-primary hover:text-white transition-colors" title="Download on Google Play"><Smartphone className="w-5 h-5" /></Link>
               <Link href="https://apps.apple.com/in/app/radio-nyra-raleigh-durham/id6469009980" target="_blank" className="text-primary hover:text-white transition-colors" title="Download on App Store"><Apple className="w-5 h-5" /></Link>
@@ -69,8 +69,8 @@ export function Footer() {
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-[10px] text-gray-500 uppercase tracking-widest font-bold">
           <p>© {new Date().getFullYear()} Radio Nyra. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link href="https://radionyra.com/" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="https://radionyra.com/" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link href="/about" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/about" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
           <p>Contact: info@radionyra.com</p>
         </div>
